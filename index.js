@@ -10,7 +10,7 @@ function currentTime() {
     const hours = myDate.getUTCHours();
     const minutes = myDate.getUTCMinutes();
     const seconds = myDate.getUTCSeconds();
-    const milliseconds = myDate.getUTCMilliseconds();
+    const milliseconds = Date.now();
     const time = (` ${milliseconds}`) 
     times.innerHTML = 'Current UTC Time in millisecond : '+ time;
     daye.innerHTML = 'Current day of the week : ' +dayss;
